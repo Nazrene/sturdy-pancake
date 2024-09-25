@@ -6,7 +6,7 @@ def create_member():
     new_member = Member(name=name)
     session.add(new_member)
     session.commit()
-    print(f"Member '{name}' not added")
+    print(f"Member '{name}' added")
 
 def create_book():
     title = input("Enter book title: ")
@@ -14,7 +14,7 @@ def create_book():
     new_book = Book(title=title, author=author)
     session.add(new_book)
     session.commit()
-    print(f"Book '{title}' by {author} not added")
+    print(f"Book '{title}' by {author} added")
 
 def borrow_book():
     member_id = int(input("Enter member ID: "))

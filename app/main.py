@@ -1,9 +1,6 @@
-from app.database import init_db
-from app.cli import create_book, create_member, borrow_book, list_books, list_members
+from cli import create_book, create_member, borrow_book, list_books, list_members
 
 def main():
-    init_db()
-
     while True:
         print("1. Add Book")
         print("2. Add Member")
